@@ -1,0 +1,79 @@
+[begin] (Fluxbox)
+[encoding] {UTF-8}
+	[exec] (Terminal) {urxvt}
+	[exec] (File Manager) {thunar}
+	[exec] (Mail Reader) {thunderbird}
+	[exec] (Web Browser) {firefox}
+[separator]
+[submenu] (Settings)
+	[exec] (Adobe Flash Player) {flash-player-properties}
+	[exec] (File Manager) {thunar-settings}
+	[exec] (LXAppearance) {lxappearance}
+	[exec] (Preferred Applications) {exo-preferred-applications}
+	[exec] (Privelege Granting) {gksu-properties}
+	[exec] (Removable Drives and Media) {thunar-volman-settings}
+[end]
+[separator]
+[submenu] (Accessories)
+	[exec] (7-Zip FM) {7zFM}
+	[exec] (Archive Manager) {file-roller}
+[end]
+[submenu] (Developement)
+	[exec] (Geany) {geany}
+	[exec] (Color Chooser) {gcolor2}
+[end]
+[submenu] (Graphics)
+	[exec] (GIMP) {gimp-2.8}
+	[exec] (Inkscape) {inkscape}
+[end]
+[submenu] (Internet)
+	[exec] (Deluge) {deluge-gtk}
+	[exec] (FileZilla) {filezilla}
+	[exec] (Firefox) {firefox}
+	[exec] (Wicd) {/usr/bin/wicd-client}
+	[exec] (Zenmap) {zenmap}
+	[exec] (Zenmap 'as root') {/usr/share/zenmap/su-to-zenmap.sh}
+	[exec] (Skype) {skype}
+[end]
+[submenu] (Multimedia)
+	[exec] (Audacity) {audacity}
+	[exec] (ncmpcpp) {urxvt -e ncmpcpp}
+	[exec] (VLC) {vc}
+[end]
+[submenu] (System)
+	[exec] (Htop) {urxvt -e htop}
+	[exec] (UXTerm) {uxterm}
+	[exec] (XTerm) {xterm}
+	[exec] (URxvt) {urxvt}
+	[exec] (XScreensaver) {xscreensaver}
+[end]
+[submenu] (Office)
+	[submenu] (LibreOffice)
+		[exec] (LibreOffice Base) {libreoffice --base}
+		[exec] (LibreOffice Calc) {libreoffice --calc}
+		[exec] (LibreOffice Draw) {libreoffice --draw}
+		[exec] (LibreOffice Impress) {libreoffice --impress}
+		[exec] (LibreOffice Writer) {libreoffice --writer}
+	[end]
+[end]
+[separator]
+[submenu] (Fluxbox menu)
+      [config] (Configure)
+[submenu] (System Styles) {Choose a style...}
+      [stylesdir] (/usr/share/fluxbox/styles)
+[end]
+[submenu] (User Styles) {Choose a style...}
+      [stylesdir] (~/.fluxbox/styles)
+[end]
+      [workspaces] (Workspace List)
+[submenu] (Tools)
+      [exec] (Regen Menu) {fluxbox-generate_menu}
+[end]
+      [commanddialog] (Fluxbox Command)
+      [reconfig] (Reload config)
+      [restart] (Restart)
+      [exec] (About) {(fluxbox -v; fluxbox -info | sed 1d) | xmessage -file - -center}
+      [separator]
+      [exit] (Exit)
+[end]
+[separator]

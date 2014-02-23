@@ -1,0 +1,16 @@
+[app] (name=fbrun)
+  [Position]	(CENTER)	{0 0}
+  [Layer]	{2}
+[end]
+[app] (name=terminator) (class=Terminator)
+  [Dimensions]	{37% 34%}
+  [Position]	(UPPERLEFT)	{1% 2%}
+[end]
+[app] (name=urxvt) (class=URxvt)
+[end]
+[app] (name=thunar) (class=Thunar) (role=Thunar-1381990283-228239636)
+  [Position]	(UPPERLEFT)	{1% 48%}
+[end]
+[app] (name=thunar) (class=Thunar) (role=Thunar-1382587098-1058555979)
+  [Dimensions]	{76% 80%}
+[end]
